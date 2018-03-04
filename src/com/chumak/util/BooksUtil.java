@@ -229,7 +229,7 @@ public class BooksUtil {
 
     //    Returns total number of books
     public long getTotal() {
-        return booksList.stream().count();
+        return booksList.size();
     }
 
     //Returns true if any book with specified author exists

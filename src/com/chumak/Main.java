@@ -28,9 +28,10 @@ public class Main {
         List<Book> books = booksUtil.getBooksByGenreAndHeight(genre, height);
         //Returns "Story of Philosophy, The"
         System.out.print("The title of the book with " + genre + " genre and height " + height + " is: ");
-        books.stream().forEach(book -> System.out.println(book.getTitle()));
+        books.forEach(book -> System.out.println(book.getTitle()));
         //Returns 2
         System.out.println("Number of genres in which the author " + author + " wrote: " + booksUtil.getGenreCountByAuthor(author));
+
     }
 
 }
